@@ -1,11 +1,25 @@
-package com.oop;
+package com.oop1.constructor;
+ class Car1Default{
 
- class Car1
-{
+ private String doors;
+ private String engine;
+ private String driver;
+ private int speed;
 
-private String doors;
-private String engine;
-private String drivers;
-public int speed ;
+public Car1Default() {
+	doors = "closed";
+	engine = "on";
+	driver= "seated";
+	speed = 10;
+}
 
+public String run() {
+	if(doors.equals("closed") && engine.equals("on")&& driver.equals("seated") 
+			&& speed >0) {
+		return "car is running";
+	}
+	else{
+		return "car is not running";
+	}
+}
 }
